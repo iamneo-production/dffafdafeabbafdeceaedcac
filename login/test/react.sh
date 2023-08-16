@@ -1,9 +1,9 @@
-if [ -d "/home/coder/project/workspace/LoginJS/test.js" ]
+if [ -d "/home/coder/project/workspace/login/LoginJS/test.js" ]
     then
-        rm -r /home/coder/project/workspace/LoginJS/test.js;
+        rm -r /home/coder/project/workspace/login/LoginJS/test.js;
 fi
-cp -r /home/coder/project/workspace/react/tests /home/coder/project/workspace/reactapp/src/;
-cd /home/coder/project/workspace/reactapp/;
+cp -r /home/coder/project/workspace/login/test/test.js /home/coder/project/workspace/login/LoginJS;
+cd /home/coder/project/workspace/login/LoginJS;
 export CI=true;
-npx react-scripts test --verbose --testPathPattern=src/tests 2>&1;
+npm jest
 
