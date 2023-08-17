@@ -10,7 +10,7 @@ function validateRegistration() {
     var passwordValidation = document.getElementById("passwordValidation");
 
     if (password !== confirmPassword) {
-        passwordValidation.textContent = "Passwords do not match";
+        passwordValidation.textContent = "Passwords do not mtch";
         return false;
     }
 
